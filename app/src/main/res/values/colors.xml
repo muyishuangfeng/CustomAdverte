@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6BBEB8</color>
+    <color name="colorPrimaryDark">#3F51B5</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#F1F3F4</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <color name="white">#ffffff</color>
+    <color name="txt_title">#666666</color>
+    <color name="common_content_bg">#f9f9fd</color>
+    <color name="black">#000000</color>
+    <color name="dark_green">#2EA984</color>
+    <color name="red">#FF0000</color> <!--红色 -->
+    <color name="gray">#8a8a8a</color>
+    <color name="light_blue">#0983FC</color>
+    <color name="transparent">#00000000</color>
+    <!--首页item文字颜色-->
+    <color name="colorSubtitle">#999</color>
+    <!--正文文字颜色-->
+    <color name="colorContent">#ff333333</color>
+    <!--item的5.0一下版本选择器颜色-->
+    <color name="itemLowBackground">#d9d9d9</color>
+    <color name="colorTheme">#ffce3d3a</color>
+    <color name="transparent_00ffffff">#00ffffff</color>
+    <color name="green">#2ea984</color>
+    <color name="txt_color">#48495F</color>
+    <color name="orangeRed">#FF4500</color>
+    <color name="coral">#FF7F50</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="gold">#FFD700</color>
+    <color name="dark_goldenrod">#EEAD0E</color>
+    <color name="deep_sky_blue">#00BFFF</color>
+    <color name="snow">#8B8989</color>
+    <color name="colorPrimaryGreen">#1d953f</color>
+    <color name="colorPrimaryDarkGreen">#78a355</color>
+    <color name="colorAccentDef">#7fb80e</color>
+    <color name="colorPrimaryPink">#ea66a6</color>
+    <color name="colorPrimaryDarkPink">#f173ac</color>
+    <color name="circle">#ff4466</color>
+    <color name="trans">#55555555</color>
+    <color name="ghost_white">#F8F8FF</color>
+    <color name="gray91">#E8E8E8</color>
+    <color name="font_color_35">#368ca8</color>
+    <color name="font_color_41">#ae4ce6</color>
+    <color name="trans_parent">#00000000</color>
+    <color name="light_gray">#EAEAEA</color>
+    </resources>

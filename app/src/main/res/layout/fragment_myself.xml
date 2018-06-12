@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray"
+    android:fitsSystemWindows="false"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp">
+
+        <LinearLayout
+            android:id="@+id/lyt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            app:layout_collapseMode="pin">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_myself_user"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_guide_4"
+                app:civ_border_color="@color/white"
+                app:civ_border_width="2dp" />
+
+            <TextView
+                android:id="@+id/txt_myself_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_default"
+                android:textColor="@color/txt_title"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txt_myself_login"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/text_login"
+                android:textColor="@color/txt_title"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/img_next"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_next" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <TextView
+            android:id="@+id/txt_myself_update"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_update"
+            android:drawablePadding="@dimen/sp_14"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/text_update"
+            android:textColor="@color/txt_title"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txt_myself_about"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:drawableLeft="@drawable/ic_about"
+            android:drawablePadding="@dimen/sp_14"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="@string/text_about_us"
+            android:textColor="@color/txt_title"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

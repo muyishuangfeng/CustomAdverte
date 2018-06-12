@@ -1,0 +1,219 @@
+// Retrofit
+def RetrofitVersion = "2.3.0"
+
+//RxJavaConver
+def RetrofitRxJava2Version = "1.0.0"
+
+// OkHttp
+def OkHttpVersion = '3.9.0'
+
+// RxJava
+def RxJavaVersion = '2.1.5'
+
+// RxAndroid
+def RxAndroidVersion = '2.0.1'
+
+// EventBus
+def EventBusVersion = "3.0.0"
+
+// ButterKnife
+def ButterKnifeVersion = "8.5.1"
+
+// Gson
+def GsonVersion = "2.8.0"
+
+// Litepal
+def LitepalVersion = "1.6.0"
+
+
+// PhotoView
+def PhotoViewVersion = "1.3.1"
+
+// Logger
+def LoggerVersion = "2.1.1"
+
+//Picasso
+def PicassoVersion = "2.5.2"
+
+//RxLifecycle
+def RxLifecycleVersion = "2.1.0"
+//okio
+def okio = "1.13.0"
+//okio
+def APPV7 = "26.0.2"
+def supportv4 = "26.0.2"
+def roomVersion = "1.0.0"
+def extensionsVersion = "1.1.0"
+def lifecycle = "1.1.0"
+def zxing = "3.3.0"
+def daimajia = "1.1.5@aar"
+def banner = "1.4.9"
+def bottomSheet = "1.3.0@aar"
+def nineoldandroid = "2.4.0"
+def SystemBarVersion = "1.0.3"
+def rxEasyVersion = "2.0.5"
+//来疯直播
+def laiFengLive = "1.0.4"
+//圆形头像
+def CircleImage = "2.1.0"
+def WSLiveDemo = "v1.7"
+def exoPlayer = "2.1.50"
+// Glide
+def GlideVersion = "4.4.0"
+
+// GlideCompiler
+def GlideCompiler = "4.4.0"
+// GlideokhttpVersion
+def GlideokhttpVersion = '1.3.1'
+// glide图片格式变换
+def glideTransformations = '3.0.1'
+// glide图片格式变换
+def glideGPUTransformations = '1.4.1'
+//
+def ConstraintVersion = "1.0.2"
+//
+def TestJunit = "4.12"
+//
+def SupportTest = "1.0.1"
+//
+def EspressoCore = "3.0.1"
+def ExoRtmp = "2.7.1"
+def ExoOkHttp = "2.7.1"
+def gsyVideo = "2.1.0"
+def niceVideoPlayer = "v2.2"
+def lifeRecycler = "1.1.0"
+def rxAndroid1 = "1.2.1"
+def convenientbanner = "2.0.5"
+def baseRecyclerView = "2.9.40"
+def qrCode = "1.2.1"
+def ucrop = "2.2.0"
+def rxReady = "2.0.0"
+def libksylive = "3.0.0"
+
+ext {
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26
+
+    ]
+
+    dependencies = [
+
+            appcompatv7            : "com.android.support:appcompat-v7:${APPV7}",
+            design                   : "com.android.support:design:${APPV7}",
+            supportv4              :"com.android.support:support-v4:${supportv4}",
+            cardView               :"com.android.support:cardview-v7:${APPV7}",
+            recyclerView               :"com.android.support:recyclerview-v7:${APPV7}",
+            persistence           :"android.arch.persistence.room:runtime:${roomVersion}",
+            roomCompiler           :"android.arch.persistence.room:compiler:${roomVersion}",
+
+            //constraint
+            libConstraint   : "com.android.support.constraint:constraint-layout:${ConstraintVersion}",
+
+            //TestJunit
+            libTestJunit   : "junit:junit:${TestJunit}",
+            //support
+            libSupportTest   : "com.android.support.test:runner:${SupportTest}",
+            //EspressoCore
+            libEspressoCore   : "com.android.support.test.espresso:espresso-core:${EspressoCore}",
+
+            // https://github.com/square/retrofit
+            libRetrofit                : "com.squareup.retrofit2:retrofit:${RetrofitVersion}",
+            libRetrofitAdapterRxJava   : "com.jakewharton.retrofit:retrofit2-rxjava2-adapter:${RetrofitRxJava2Version}",
+            libRetrofitConverterGson   : "com.squareup.retrofit2:converter-gson:${RetrofitVersion}",
+            libRetrofitConverterScalars: "com.squareup.retrofit2:converter-scalars:${RetrofitVersion}",
+            libRetrofitConverterAdapter:"com.squareup.retrofit2:adapter-rxjava:${RetrofitVersion}",
+            // https://github.com/square/okhttp
+            libOkHttp                  : "com.squareup.okhttp3:okhttp:${OkHttpVersion}",
+            libOkio                  : "com.squareup.okio:okio:${okio}",
+            //logging-interceptor
+            libOkHttpLoggingInterceptor: "com.squareup.okhttp3:logging-interceptor:${OkHttpVersion}",
+
+            // https://github.com/ReactiveX/RxJava
+            libRxJava                  : "io.reactivex.rxjava2:rxjava:${RxJavaVersion}",
+            // https://github.com/ReactiveX/RxAndroid
+            libRxAndroid               : "io.reactivex.rxjava2:rxandroid:${RxAndroidVersion}",
+
+            // https://github.com/greenrobot/EventBus
+            libEventBus                : "org.greenrobot:eventbus:${EventBusVersion}",
+
+            // https://github.com/JakeWharton/butterknife
+            libButterKnife             : "com.jakewharton:butterknife:${ButterKnifeVersion}",
+
+            // https://github.com/google/gson
+            libGson                    : "com.google.code.gson:gson:${GsonVersion}",
+
+            // litepal
+            libLitepal                 : "org.litepal.android:core:${LitepalVersion}",
+            // glide
+            libGlide                   : "com.github.bumptech.glide:glide:${GlideVersion}",
+            libGlideCompiler           : "annotationProcessor 'com.github.bumptech.glide:compiler:${GlideCompiler}'",
+            // PhotoView
+            libPhotoView               : "com.github.chrisbanes:PhotoView:${PhotoViewVersion}",
+            // Logger
+            libLogger                  : "com.orhanobut:logger:${LoggerVersion}",
+            //Picasso
+            libPicasso                 : "com.squareup.picasso:picasso:${PicassoVersion}",
+            //RxLifecycle
+            libRxLifecycle             : "com.trello.rxlifecycle2:rxlifecycle:${RxLifecycleVersion}",
+            //RxLifecycleComponents
+            libRxLifeComponents        : "com.trello.rxlifecycle2:rxlifecycle-components:${RxLifecycleVersion}",
+            libEspresso                 :'com.android.support.test.espresso:espresso-core:3.0.1',
+            constraintLayout           :'com.android.support.constraint:constraint-layout:1.0.2',
+            junit                        :'junit:junit:4.12',
+            testRunner                  :'com.android.support.test:runner:1.0.1',
+            libExtensions              :"android.arch.lifecycle:extensions:${extensionsVersion}",
+            libLife                     :"android.arch.lifecycle:reactivestreams:${lifecycle}",
+            zxing                       :"com.google.zxing:core:${zxing}",
+            libDiamajia                   :"com.daimajia.slider:library:${daimajia}",
+            libBanner                    :"com.youth.banner:banner:${banner}",
+            libBottomsheet                  :"com.cocosw:bottomsheet:${bottomSheet}",
+            nineoldandroids                :"com.nineoldandroids:library:${nineoldandroid}",
+            multidex: 'com.android.support:multidex:1.0.3',
+            leakcanary: 'com.squareup.leakcanary:leakcanary-android:1.5.4',
+            leakcanaryAndroid: 'com.squareup.leakcanary:leakcanary-android-no-op:1.5.4',
+            libSystembartint: "com.readystatesoftware.systembartint:systembartint:${SystemBarVersion}",
+            libRxEasy: "com.zhouyou:rxeasyhttp:${rxEasyVersion}",
+            libLive: "com.laifeng:sopcast-sdk:${laiFengLive}",
+            libCircleImage: "de.hdodenhof:circleimageview:${CircleImage}",
+            libWSLive: "com.github.WangShuo1143368701:WSLiveDemo:${WSLiveDemo}",
+            libExoPlayer: "com.ycjiang:VideoPlayModule:${exoPlayer}",
+            // glide
+            libGlide                   : "com.github.bumptech.glide:glide:${GlideVersion}",
+            libGlideCompiler           : "com.github.bumptech.glide:compiler:${GlideCompiler}",
+            libGlideokhttp           : "com.github.bumptech.glide:okhttp-integration:${GlideokhttpVersion}",
+            libGlideTransformations   : "jp.wasabeef:glide-transformations:${glideTransformations}",
+            libGlideGPUTransformations   : "jp.co.cyberagent.android.gpuimage:gpuimage-library:${glideGPUTransformations}",
+            libExoRtmp :"com.google.android.exoplayer:extension-rtmp:${ExoRtmp}",
+            libExoOkHttp :"com.google.android.exoplayer:extension-okhttp:${ExoOkHttp}",
+            //视频
+            libgsyVideoPlayer: "com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-java:${gsyVideo}",
+            //根据你的需求
+            libgsyVideoX64:"com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x64:${gsyVideo}",
+            libgsyVideoX86:"com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-x86:${gsyVideo}",
+            libgsyVideoArm64:"com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-arm64:${gsyVideo}",
+            libgsyVideoArmv5:"com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv5:${gsyVideo}",
+            libgsyVideoArmv7a:"com.github.CarGuo.GSYVideoPlayer:gsyVideoPlayer-armv7a:${gsyVideo}",
+            //视频完整版
+            libGsyVideoAll:"com.shuyu:GSYVideoPlayer:${gsyVideo}",
+            libNickVideoPlayer:"com.github.xiaoyanger0825:NiceVieoPlayer:${niceVideoPlayer}",
+            libLifecycleExten:"android.arch.lifecycle:extensions:${lifeRecycler}",
+            libLifecycleReact:"android.arch.lifecycle:reactivestreams:${lifeRecycler}",
+            libRxAndroid1:"io.reactivex:rxandroid:${rxAndroid1}",
+            libConvenBanner:"com.bigkoo:convenientbanner:${convenientbanner}",
+            libBaseRecyclerview:"com.github.CymChad:BaseRecyclerViewAdapterHelper:${baseRecyclerView}",
+            //二维码
+            libQrCode:"cn.bingoogolapple:bga-qrcode-zxing:${qrCode}",
+            //裁剪
+            libUcrop:"com.yalantis:ucrop:${ucrop}",
+            //事件总线
+            libRxrelay:"com.jakewharton.rxrelay2:rxrelay:${rxReady}",
+            //金山直播
+            libksyliveJava:"com.ksyun.media:libksylive-java:${libksylive}",
+            libksyliveArmv7a:"com.ksyun.media:libksylive-armv7a:${libksylive}",
+            libksyliveArm64:"com.ksyun.media:libksylive-arm64:${libksylive}",
+    ]
+}
+

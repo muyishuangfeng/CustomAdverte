@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="charge_list">
+        <item>按天收费</item>
+        <item>按月收费</item>
+        <item>按年收费</item>
+    </string-array>
+
+</resources>
